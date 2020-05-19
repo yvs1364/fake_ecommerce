@@ -1,0 +1,6 @@
+.row{
+    display: grid;
+    height: auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 3fr);
+}
