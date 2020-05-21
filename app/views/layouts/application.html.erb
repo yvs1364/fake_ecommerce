@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Fake-Ecommerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,5 +12,10 @@
 
   <body>
     <%= yield %>
+    <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+      <a data-dismiss="alert" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
   </body>
 </html>

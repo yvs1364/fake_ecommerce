@@ -1,6 +1,8 @@
-.row{
-    display: grid;
+.rows{
+    display: grid !important; 
     height: auto;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 3fr);
+    margin-left: 15px;
+    margin-right: 15px;
 }

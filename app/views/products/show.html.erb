@@ -1,0 +1,13 @@
+<div class="container">
+    <h1><%= @product.name %></h1>
+     <p><%= @product.description %></p>
+     <p><strong><%= @product.price %>€</strong></p>
+      <button type="button" class="btn btn-success">Buy</button>
+</div>
+<div class="container">
+<%= simple_form_for [@product, @buy] do |b| %>
+      <%= b.input :quantity %>
+      <%= b.button :submit, class: 'btn btn-primary' %>
+      <!-- dois afficher le total_price -->
+      <% end %>
+</div>

@@ -2,7 +2,7 @@ require "faker"
 Product.destroy_all
 puts "#{Product.count} products destroy"
 
-20.times do
+22.times do
   Product.create!(
     name: Faker::Name.name,
     description: Faker::TvShows::BojackHorseman.quote,

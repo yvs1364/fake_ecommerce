@@ -1,11 +1,12 @@
 <div class="container">
     <h1>Product#index</h1>
-        <div class="row">
+    <div class="rows">
         <% @products.each do |product| %>
             <div class="card-product">
                 <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
                 <div class="card-product-infos">
-                  <h2><%= product.name %></h2>
+                  <h2><%= product.name %>
+                  <button type="button" class="btn btn-success" id="btn-card"><%= link_to  "Buy", product_path(product) %></button></h2>
                   <p><%= product.description %></p>
                   <p class="price"><strong><%= product.price %>€</strong></p>
                 </div>
