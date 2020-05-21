@@ -1,6 +1,9 @@
 require "faker"
 Product.destroy_all
-puts "#{Product.count} products destroy"
+User.destroy_all
+
+yvs = User.create!(pseudo: "juicy", email: "yvan@mail.fr",password: "password")
+puts "#{User.count} user created"
 
 22.times do
   Product.create!(
